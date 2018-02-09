@@ -1,9 +1,5 @@
 thismod = "parkour"
 
--- Load files
-local thismodpath = minetest.get_modpath("parkour")
-
-dofile(thismodpath.."/functions.lua")
 
 -- Parkourium
 
