@@ -1,4 +1,11 @@
---- Parkourium
+thismod = "parkour"
+
+-- Load files
+local thismodpath = minetest.get_modpath("parkour")
+
+dofile(thismodpath.."/functions.lua")
+
+-- Parkourium
 
 minetest.register_craftitem("parkour:parkourium_ingot", {
     description = "Parkourium Ingot",
@@ -23,6 +30,7 @@ minetest.register_node("parkour:parkourium_block", {
     tiles = {"parkourium_block.png"},
     groups = {cracky=3}
 })
+
 
 minetest.register_node("parkour:start_block", {
     description = "Parkour Start Block",
