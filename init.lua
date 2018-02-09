@@ -30,6 +30,12 @@ minetest.register_node("parkour:start_block", {
     groups = {cracky=3}
 })
 
+minetest.register_node("parkour:finish_block", {
+    description = "Parkour Finish Block",
+    tiles = {"finish_block.png"},
+    groups = {cracky=3}
+})
+
 minetest.register_node("parkour:parkore", {
   -- badum tiss! Thanks Lone_Wolf#4687!
 	description = "Parkourium Ore",
