@@ -44,6 +44,7 @@ minetest.register_node("parkour:parkore", {
   -- badum tiss! Thanks Lone_Wolf#4687!
 	description = "Parkourium Ore",
 	tiles = {"default_stone.png^parkour_mineral_parkourium.png"},
+  is_ground_content = true,
 	groups = {cracky = 3},
   drop = {
     max_items = 5,  -- Maximum number of items to drop.
