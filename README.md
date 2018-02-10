@@ -1,5 +1,5 @@
-# minetest-parkour
-A parkour mod for Minetest!
+# minetest-parkour-unstable
+The unstable branch of a parkour mod for Minetest!
 
 ## The story so far
 Long ago, way before Minetesterians existed, there were Parkourians.
