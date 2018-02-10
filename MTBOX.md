@@ -19,7 +19,7 @@ Over time, the terrain of the earth changed drastically, therefore making the in
 
 And now it's time for you and your friends to take on the tradition (but not entirely dedicate to it. Well, you can if you want. Just sayin')!
 
-Source: description.txt
+> Source: description.txt
 
 ## Helpers wanted!
 If you want a feature to be added or want to help implement the features on the roadmap, then make a PR. I always check the issues and PRs so don't worry!
