@@ -1,8 +1,8 @@
 **Note: Change the folder name to 'parkour' or another name that doesn't have a '-' in it as Minetest doesn't like characters like that.**
-minetest-parkour
+# minetest-parkour
 A parkour mod for Minetest!
 
-The story so far
+## The story so far
 Long ago, way before Minetesterians existed, there were Parkourians.
 
 Parkourians were just like Minetesterians, but one of the main differences is that they dedicate their life to creating and attemping parkours.
@@ -19,7 +19,7 @@ Over time, the terrain of the earth changed drastically, therefore making the in
 
 And now it's time for you and your friends to take on the tradition (but not entirely dedicate to it. Well, you can if you want. Just sayin')!
 
-Source: description.txt
+> Source: description.txt
 
-Helpers wanted!
+## Helpers wanted!
 If you want a feature to be added or want to help implement the features on the roadmap, then make a PR. I always check the issues and PRs so don't worry!
