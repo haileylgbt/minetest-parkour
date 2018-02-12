@@ -1,6 +1,8 @@
 dofile(minetest.get_modpath("parkour") .. "/recipes.lua")
 dofile(minetest.get_modpath("parkour") .. "/craftitems.lua")
 dofile(minetest.get_modpath("parkour") .. "/nodes.lua")
+dofile(minetest.get_modpath("parkour") .. "/commands.lua")
+
 
 time = 0 or ""
 times_text = ""
@@ -11,6 +13,7 @@ timeisstop = 0
 win = ""
 
 minetest.register_on_joinplayer(function(player)
+minetest.chat_send_all("Minetest Parkour - Running v0.2 'Tim'")
 minetest.register_globalstep(function(dtime)
 if timerstart == 1 then
 if timeps == 0 then
