@@ -39,6 +39,18 @@ end,
 minetest.register_node("parkour:finish_block", {
     description = "Parkour Finish Block",
     tiles = {"finish_block.png"},
+    on_rightclick = function (pos, node, player, itemstack, pointed_thing)
+if time > 0 then
+timerstart = 0
+timeisstop = 1
+win = "GG! You finished this parkour your time is " .. time
+times_text = "" .. ""
+minetest.after(5, function(dtime)
+win = ""
+timeisstop = 0
+end)
+end
+end,
     groups = {cracky=3}
 })
 

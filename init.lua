@@ -2,12 +2,13 @@ dofile(minetest.get_modpath("parkour") .. "/recipes.lua")
 dofile(minetest.get_modpath("parkour") .. "/craftitems.lua")
 dofile(minetest.get_modpath("parkour") .. "/nodes.lua")
 
-ime = 0 or ""
+time = 0 or ""
 times_text = ""
 timeps = 0 or ""
 timerstart = 0 or ""
 timers = ""
 timeisstop = 0
+win = ""
 
 minetest.register_on_joinplayer(function(player)
 minetest.register_globalstep(function(dtime)
@@ -25,6 +26,7 @@ end)
 minetest.register_globalstep(function(dtime)
 player:hud_change(timerps, "text", timers)
 player:hud_change(times, "text", times_text)
+player:hud_change(hudwin, "text", win)
 
 if timerstart == 1 then
 times_text = "timer " .. time
@@ -49,6 +51,18 @@ timerps = player:hud_add({
     position      = {x = 0.5, y = 0.3},
     offset    = {x = 0, y = 0},
     text      = timers,
+    alignment = 0,
+    scale     = { x = 5, y = 6},
+    number    = 0xFFFFFF,
+
+
+})
+
+hudwin = player:hud_add({
+    hud_elem_type = "text",
+    position      = {x = 0.5, y = 0.3},
+    offset    = {x = 0, y = 0},
+    text      = win,
     alignment = 0,
     scale     = { x = 5, y = 6},
     number    = 0xFFFFFF,
