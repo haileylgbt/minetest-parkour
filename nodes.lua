@@ -43,7 +43,7 @@ minetest.register_node("parkour:finish_block", {
 if time > 0 then
 timerstart = 0
 timeisstop = 1
-win = "GG! You finished this parkour your time is " .. time
+win = "GG! You finished this parkour in " .. time .. " seconds!"
 times_text = "" .. ""
 minetest.after(5, function(dtime)
 win = ""
