@@ -8,6 +8,31 @@ minetest.register_node("parkour:parkourium_block", {
 minetest.register_node("parkour:start_block", {
     description = "Parkour Start Block",
     tiles = {"start_block.png"},
+on_rightclick = function (pos, node, player, itemstack, pointed_thing)
+if timeisstop == 0 then
+minetest.after(1, function(dtime)
+timerstart = 0
+times_text = "" .. ""
+time = 0
+timers = 3
+minetest.after(1, function(dtime)
+timers = 2
+minetest.after(1, function(dtime)
+timers = 1
+minetest.after(1, function(dtime)
+timers = "Go!"
+ timerstart = 1
+     timeisstop = 1
+minetest.after(1, function(dtime)
+     timers = ""
+
+end)
+end)
+end)
+end)
+end)
+end
+end,
     groups = {cracky=3}
 })
 
