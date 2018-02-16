@@ -13,7 +13,7 @@ timeisstop = 0
 win = ""
 
 minetest.register_on_joinplayer(function(player)
-minetest.chat_send_all("Minetest Parkour - Running v0.2 'Tim'")
+minetest.chat_send_all("Minetest Parkour - Running v0.3 'Gerold'")
 minetest.register_globalstep(function(dtime)
 if timerstart == 1 then
 if timeps == 0 then
